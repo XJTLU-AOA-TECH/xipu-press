@@ -20,7 +20,7 @@ A Codex skill that turns raw text and images into **print-ready designed artifac
 
 ## Install
 **A · skill-installer (recommended):** ask Codex to "install the skill from XJTLU-AOA-TECH/xipu-press", or point skill-installer at that repo path.
-**B · manual:** copy the whole `xipu-press/` folder to `~/.codex/skills/xipu-press/` and restart the session.
+**B · manual:** copy the whole `xipu-press/` folder to `~/.codex/skills/xipu-press/` and restart the session. Claude Code reads the same format: copy to `~/.claude/skills/xipu-press/` instead.
 
 ## Use
 Ask Codex directly, e.g. "make an A4 briefing in XJTLU style", "make an FDE Lab poster, Chinese", "make a bilingual FDE Lab one-pager".

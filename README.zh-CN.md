@@ -23,7 +23,7 @@
 对 Codex 说：「从 XJTLU-AOA-TECH/xipu-press 安装 skill」，或用 skill-installer 指定该仓库路径。
 
 **方式 B·手动**
-把整个 `xipu-press/` 文件夹拷到 `~/.codex/skills/xipu-press/`，重开会话即可。
+把整个 `xipu-press/` 文件夹拷到 `~/.codex/skills/xipu-press/`，重开会话即可。Claude Code 读同一种格式：改拷到 `~/.claude/skills/xipu-press/`。
 
 ## 使用
 直接对 Codex 说需求，例如：
