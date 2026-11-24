@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>FDE Training Briefing</title><style>
+  /* XIPU Press design system — XJTLU house style.
+     navy #010544 / orange #FB7831 / magenta #CE57C1 / grey #E7E6E6;
+     DIN Alternate display, Arial body, PingFang SC Chinese; flat print: no gradients/shadows. */
+  :root{ --navy:#010544; --orange:#FB7831; --magenta:#CE57C1; --grey:#E7E6E6; --ink:#1c1c1e; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'DIN Alternate','Arial','PingFang SC',sans-serif;color:var(--ink);background:#555;}
+  .page{width:210mm;height:297mm;background:#fff;position:relative;overflow:hidden;
+        padding:9mm 11mm 9mm 11mm;page-break-after:always;margin:0 auto 8mm auto;}
+  .page:last-child{page-break-after:auto;}
+  .zh p,.zh td,.zh li,.zh div{font-family:'PingFang SC','Arial',sans-serif;}
+  .hdr{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--navy);padding-bottom:1.8mm;margin-bottom:3.2mm;}
+  .hdr .doc{font-size:7.5pt;letter-spacing:.14em;text-transform:uppercase;color:#666;}
+  .hdr .mark{font-size:10.5pt;font-weight:bold;letter-spacing:.22em;color:var(--navy);}
+  .titleblock{background:var(--navy);color:#fff;padding:6mm 6.4mm 5.2mm 6.4mm;margin-bottom:4mm;}
+  .kicker{color:var(--orange);font-size:8pt;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.8mm;}
+  .titleblock h1{font-size:18pt;line-height:1.18;font-weight:bold;}
+  .titleblock .zh-sub{font-family:'PingFang SC';font-size:10.5pt;color:#cfd0dd;margin-top:1.4mm;}
+  .titleblock .meta{margin-top:3mm;font-size:7.6pt;color:#9fa1b8;letter-spacing:.06em;}
+  h2{font-size:10pt;color:var(--navy);margin:3mm 0 1.3mm 0;display:flex;align-items:center;gap:2mm;}
+  h2 .no{color:var(--magenta);font-size:9pt;font-weight:bold;}
+  h2 .zh-t{font-family:'PingFang SC';font-weight:600;}
+  p,li{font-size:8.5pt;line-height:1.36;}
+  .lead{font-size:8.8pt;line-height:1.44;}
+  .stat{display:flex;gap:6mm;margin:2mm 0 1mm 0;}
+  .stat .cell{border-top:2px solid var(--orange);padding-top:1.2mm;}
+  .stat .num{font-size:14pt;font-weight:bold;color:var(--navy);}
+  .stat .lab{font-size:7pt;color:#555;letter-spacing:.08em;text-transform:uppercase;}
+  table{width:100%;border-collapse:collapse;margin:1.2mm 0 1.5mm 0;}
+  th{background:var(--navy);color:#fff;font-size:7.4pt;text-align:left;padding:1.3mm 1.8mm;letter-spacing:.04em;}
+  td{font-size:7.9pt;line-height:1.28;padding:1.2mm 1.8mm;border-bottom:.5px solid var(--grey);vertical-align:top;}
+  tr:nth-child(even) td{background:#fafafa;}
+  .tag{display:inline-block;font-size:6.6pt;letter-spacing:.05em;padding:.3mm 1.4mm;border:1px solid var(--magenta);color:var(--magenta);text-transform:uppercase;}
+  .tag.o{border-color:var(--orange);color:var(--orange);}
+  ol.stages{counter-reset:st;list-style:none;margin-top:1.2mm;}
+  ol.stages li{counter-increment:st;position:relative;padding-left:8.6mm;margin-bottom:1.4mm;}
+  ol.stages li::before{content:counter(st);position:absolute;left:0;top:.2mm;width:5.2mm;height:5.2mm;background:var(--navy);color:#fff;font-size:8pt;font-weight:bold;display:flex;align-items:center;justify-content:center;}
+  .note{background:#f5f5f7;border-left:2px solid var(--magenta);padding:1.5mm 2.2mm;font-size:8pt;line-height:1.34;margin:1.6mm 0;}
+  .two-col{column-count:2;column-gap:5.5mm;}
+  .two-col h2{break-after:avoid;margin-top:0;}
+  .two-col p{margin-bottom:1.2mm;}
+  .season-note{font-size:8pt;color:#444;margin-top:1.4mm;border-top:.5px solid var(--grey);padding-top:1.3mm;}
+  .cn-title-band{background:var(--navy);color:#fff;padding:3.6mm 6.4mm;margin-bottom:3.4mm;}
+  .cn-title-band h1{font-family:'PingFang SC';font-size:14pt;}
+  .cn-title-band .meta{font-size:7.2pt;color:#9fa1b8;margin-top:1mm;letter-spacing:.05em;}
+  ul.plain{list-style:none;}
+  ul.plain li{padding-left:3.8mm;position:relative;margin-bottom:1mm;}
+  ul.plain li::before{content:"";position:absolute;left:0;top:1.4mm;width:1.7mm;height:1.7mm;background:var(--orange);}
+  .closing{margin-top:2mm;border-top:2px solid var(--navy);padding-top:1.8mm;font-size:8.4pt;line-height:1.44;}
+  .tight p{font-size:8pt;line-height:1.32;}
+  .figure{margin:2mm 0;}
+  .figure img{width:100%;display:block;}
+  .figure .cap{font-size:7.2pt;color:#666;border-bottom:.5px solid var(--grey);padding:1mm 0 1.2mm 0;}
+  @page{size:A4;margin:0;}
+  @media print{
+    body{background:#fff;}
+    .page{margin:0 auto;}
+  }
+</style></head><body>
+<div class="page">
+  <div class="hdr"><span class="doc">Briefing · FDE Lab</span><span class="mark">XJTLU</span></div>
+  <div class="titleblock">
+    <div class="kicker">FDE Training · Cohort 01</div>
+    <h1>Everyone Is an FDE:<br>Train Your Own AI FDE</h1>
+    <div class="zh-sub">人人都是 FDE：给自己训练一个 AI FDE</div>
+    <div class="meta">DEC 2026 · Xi'an Jiaotong-Liverpool University · FDE Lab</div>
+  </div>
+  <h2><span class="no">01</span> What this is</h2>
+  <p class="lead">A four-week, four-session practice course. Learners bring a real work problem and, with an Agent inside a harness, deliver a usable result using the FDE method: understand the site, decide what to do first, build and verify, put it into use.</p>
+  <h2><span class="no">02</span> Key figures</h2>
+  <div class="stat">
+    <div class="cell"><div class="num">4</div><div class="lab">Sessions</div></div>
+    <div class="cell"><div class="num">16h</div><div class="lab">Default effort</div></div>
+    <div class="cell"><div class="num">3–5</div><div class="lab">Teams</div></div>
+  </div>
+  <table>
+    <tr><th style="width:20%">Week</th><th>Deliverable</th><th style="width:25%">Layer</th></tr>
+    <tr><td>1</td><td>A callable Skill (dossier card)</td><td>Extract</td></tr>
+    <tr><td>2</td><td>Lean SDD prototype + data loop</td><td>Remember</td></tr>
+    <tr><td>3</td><td>MVP + UI, real-user revision</td><td>Trust</td></tr>
+    <tr><td>4</td><td>Deploy + cross-device + handover</td><td>Publish</td></tr>
+  </table>
+  <div class="note">Session 1 teaches the minimal delivery unit — the Skill — as the smallest hand-off point between builder and user.</div>
+</div>
+<div class="page zh">
+  <div class="hdr"><span class="doc">简报 · FDE Lab</span><span class="mark">XJTLU</span></div>
+  <div class="cn-title-band"><h1>人人都是 FDE：给自己训练一个 AI FDE</h1><div class="meta">2026 年 12 月 · 西交利物浦大学 · FDE Lab</div></div>
+  <h2><span class="no">01</span><span class="zh-t">这是什么</span></h2>
+  <p class="lead">四周四次实践课。学员带一个真实工作问题，带着 Agent 在 harness 里，用 FDE 方法交付一个能用的成果：理解现场、决定先做什么、构建并验证、让成果进入使用。</p>
+  <h2><span class="no">02</span><span class="zh-t">报名带什么</span></h2>
+  <ul class="plain">
+    <li>真实问题＋具名 owner；</li>
+    <li>获准的数据与访问；</li>
+    <li>一名能动手的构建者＋每周课外时间。</li>
+  </ul>
+  <h2><span class="no">03</span><span class="zh-t">边界</span></h2>
+  <p>FDE Lab 提供方法、教练与工程评审；不替学员作业务判断、不代做项目、不担保商业结果。不承诺证书、学分或生产上线。</p>
+  <div class="closing">第一课：做出你的最小交付单元 Skill。详见 FDE_Training 仓库基线 v1.0。</div>
+</div>
+</body></html>

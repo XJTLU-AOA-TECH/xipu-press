@@ -1,6 +1,15 @@
-# XIPU Press
+# XIPU Press (西浦印务)
 
 [中文版](README.zh-CN.md)
+
+## Why it exists
+XIPU Press is XJTLU's in-house "print shop": it turns the two house brands into a design tool anyone can use. Teams and courses constantly need posters, briefings, boards and one-pagers; non-designers layout slowly and inconsistently, and raw AI output tends toward purple gradients, identical cards and non-compliant styling. XIPU Press freezes both brands' palette/type/components into a skill — feed text + images, get compliant, consistent, print-ready artifacts. Design capability becomes an installable, reusable tool.
+
+Origin: XJTLU house style validated on real management documents (bilingual competition handbook); FDE Lab theme pixel-sampled page-by-page from the AI Leadership deck v1.0 (2026-10-27).
+
+## Examples (examples/)
+- FDE Lab poster: [HTML](examples/fde-lab-poster-sample.html) / [PDF](examples/fde-lab-poster-sample.pdf) / ![preview](examples/fde-poster-preview-1.png)
+- XJTLU A4 briefing: [HTML](examples/xjtu-doc-sample.html) / [PDF](examples/xjtu-doc-sample.pdf) / ![preview](examples/xjtu-doc-preview-1.png)
 
 A Codex skill that turns raw text and images into **print-ready designed artifacts**, in one of two house themes:
 

@@ -1,6 +1,15 @@
-# XIPU Press（中文说明）
+# XIPU Press · 西浦印务
 
 [English](README.md)
+
+## 为什么而生
+「西浦印务」＝西浦的印务处：把社内品牌视觉变成人人可用的设计产出工具。团队与课程要持续产出海报、简报、展板、一页纸；非设计同事手工排版慢、视觉不统一，AI 直出又常是紫色渐变、雷同卡片、不合规。西浦印务把两套社内品牌的色板/字体/组件固化成 skill——丢文字＋图片，即产出合规、统一、可打印的设计件，把「设计能力」变成可安装、可复用的工具。
+
+起源：XJTLU house style 在真实管理文件（双语竞赛手册）上验证；FDE Lab 主题从《AI 领导力》v1.0（2026-10-27）逐页像素取样。
+
+## 示例（examples/）
+- FDE Lab 海报：[fde-lab-poster-sample.html](examples/fde-lab-poster-sample.html)／[PDF](examples/fde-lab-poster-sample.pdf)／![预览](examples/fde-poster-preview-1.png)
+- 西浦 A4 简报：[xjtu-doc-sample.html](examples/xjtu-doc-sample.html)／[PDF](examples/xjtu-doc-sample.pdf)／![预览](examples/xjtu-doc-preview-1.png)
 
 把原始文字和图片变成**可直接打印的设计件**的 Codex skill。两套社内主题，二选一：
 
