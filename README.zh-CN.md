@@ -34,7 +34,7 @@
 skill 会：读材料→定主题/版式/语言→读对应 reference→套模板→渲染并目检→交付 HTML（＋PDF）。
 
 ## 渲染与依赖
-- `python3 scripts/render_pdf.py <file.html> <out.pdf>`，走本机 headless Chrome/Chromium/Edge（需已安装其一）。
+- `python3 scripts/render_pdf.py <file.html> <out.pdf>`，走本机 headless Chrome/Chromium/Edge（需已安装其一）。自动搜索 macOS／Windows／Linux 的常见安装位置；Windows 自带 Edge，一般无需另装。
 - 海报另渲 PNG 预览目检（可用 PyMuPDF）。
 - 沙箱内 Chrome 若 SIGABRT，改沙箱外重跑。
 

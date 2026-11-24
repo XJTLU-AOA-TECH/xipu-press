@@ -27,7 +27,7 @@ Ask Codex directly, e.g. "make an A4 briefing in XJTLU style", "make an FDE Lab 
 Workflow: read material → pick theme/format/language → read the matching reference → fill the template → render and visually verify → deliver HTML (+ PDF).
 
 ## Render & dependencies
-- `python3 scripts/render_pdf.py <file.html> <out.pdf>` via local headless Chrome/Chromium/Edge (one must be installed).
+- `python3 scripts/render_pdf.py <file.html> <out.pdf>` via local headless Chrome/Chromium/Edge (one must be installed). macOS, Windows and Linux install locations are searched automatically; on Windows, Edge ships with the OS.
 - Posters also render a PNG preview for inspection (PyMuPDF optional).
 - If Chrome SIGABRTs inside a sandbox, rerun outside it.
 
