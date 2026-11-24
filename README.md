@@ -19,7 +19,7 @@ A Codex skill that turns raw text and images into **print-ready designed artifac
 > The FDE Lab theme is the FDE Training course visual rule (see `docs/visual-system.md` in the FDE_Training repo). Course slides use the same tokens but are built separately — this skill does not make slides.
 
 ## Install
-**A · skill-installer (recommended once on GitHub):** ask Codex to "install the skill from XJTLU-AOA-TECH/xipu-press", or point skill-installer at that repo path.
+**A · skill-installer (recommended):** ask Codex to "install the skill from XJTLU-AOA-TECH/xipu-press", or point skill-installer at that repo path.
 **B · manual:** copy the whole `xipu-press/` folder to `~/.codex/skills/xipu-press/` and restart the session.
 
 ## Use

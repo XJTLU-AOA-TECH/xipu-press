@@ -19,7 +19,7 @@
 > FDE Lab 主题即 FDE Training 课程视觉统一规则，见 FDE_Training 仓库 `docs/visual-system.md`。课程 PPT 用同一套色值/字体，但 PPT 另行制作（本 skill 不做 slides）。
 
 ## 安装
-**方式 A·skill-installer（推荐，仓库上 GitHub 后）**
+**方式 A·skill-installer（推荐）**
 对 Codex 说：「从 XJTLU-AOA-TECH/xipu-press 安装 skill」，或用 skill-installer 指定该仓库路径。
 
 **方式 B·手动**
